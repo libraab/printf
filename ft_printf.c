@@ -6,7 +6,7 @@
 /*   By: abouhlel <abouhlel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 11:18:37 by abouhlel          #+#    #+#             */
-/*   Updated: 2021/06/10 12:21:50 by abouhlel         ###   ########.fr       */
+/*   Updated: 2021/06/10 16:13:28 by abouhlel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_print_format(va_list ap, char *format)
 	lenght = 0;
 	info = malloc(sizeof(t_info) * 1);
 	if (!info)
-		return (-1);
+		return (0);
 	while (format[i] != '\0')
 	{
 		while (format[i] != '%' && format[i] != '\0')

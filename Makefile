@@ -6,7 +6,7 @@
 #    By: abouhlel <abouhlel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/31 11:18:13 by abouhlel          #+#    #+#              #
-#    Updated: 2021/06/10 12:28:55 by abouhlel         ###   ########.fr        #
+#    Updated: 2021/06/04 11:59:39 by abouhlel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ NAME		= libftprintf.a
 LIBFT		= libft
 LIBFT_LIB	= libft.a
 
-SRCS		= ./ft_printf.c ./ft_flags.c ./print_type.c\
-			  ./print_char.c ./print_string.c\
-			  ./print_nbr.c ./utils.c\
+SRCS		= ./ft_printf.c ./utils.c\
+			  ./print_char.c ./print_nbr.c ./print_string.c\
+			  ./print_type.c ./ft_flags.c
 OBJS		= $(SRCS:.c=.o)
 INCS		= .
 RM			= rm -f
